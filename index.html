@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提示词</title>
+    <style>
+        body {
+            font-family: Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>提示词</h1>
+
+    <h2>随机生成单词</h2>
+    <p>根据以下规则生成一个随机的英语单词：1. 随机确定单词长度，长度范围为1到19个字母，基于英语单词长度概率分布。2. 按英语字母出现频率逐个生成字母，每一个字母的选择逻辑独立。3. 确保生成的单词符合以下条件：（1）若单词长度为1，则必须是元音（a, e, i, o, u）；（2）同一字母不可连续出现超过3次；（3）不能是现有的真实英语单词。请给出一个符合上述规则的随机生成单词，并解释每个字母的选择依据。</p>
+</body>
+</html>
